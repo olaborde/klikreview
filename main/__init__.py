@@ -23,7 +23,8 @@ css = Bundle('./css/styles.css', './css/dashboard.css' ,
             output='gen/styles.css')
 assets.register('css_all', css)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dxeohiehtqctmb:46bdc29c50ac6d626bbc3255c1cda52732c161806d907c11a472bfe9eb73fea7@ec2-3-91-139-25.compute-1.amazonaws.com:5432/d68lllaljad3l6'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/klik'
 app.config['SQLALCHEMY_ECHO'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
