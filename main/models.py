@@ -5,7 +5,7 @@ from flask_login import UserMixin
 
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    picture = db.Column(db.String(100))
+    picture = db.Column(db.String(1000))
     fname = db.Column(db.String(100))
     lname = db.Column(db.String(100))
     bio = db.Column(db.Text())
@@ -41,7 +41,7 @@ company_comment = db.Table('company_comment',
 
 class Company(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    picture = db.Column(db.String(100))
+    picture = db.Column(db.String(1000))
     name = db.Column(db.String(100), nullable=False, unique=True)
     bio = db.Column(db.Text())
     specialization = db.Column(db.String(100))
