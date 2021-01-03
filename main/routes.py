@@ -37,7 +37,7 @@ def about():
 @login_required
 def dashboard():
     company_review = Comment.query.filter((Comment.companyName==current_user.name)).all()
-    return render_template('dashboard.html', company_review=company_review)
+    # return render_template('dashboard.html', company_review=company_review)
 
     print('%%%%%%%%%%%%%%%%%%', company_review)
     ratings = []
