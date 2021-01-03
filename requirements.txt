@@ -26,6 +26,8 @@ MarkupSafe==1.1.1
 odfpy==1.4.1
 openpyxl==3.0.5
 pipreqs==0.4.10
+psycopg2==2.8.6
+psycopg2-binary==2.8.6
 pycparser==2.20
 pyexcel==0.6.6
 pyexcel-io==0.6.4
