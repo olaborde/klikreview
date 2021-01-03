@@ -1,4 +1,3 @@
-
 from flask import render_template, url_for, flash, redirect, request, session
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user, login_required
 from main import app, db, login_manager
@@ -37,7 +36,7 @@ def about():
 @login_required
 def dashboard():
     company_review = Comment.query.filter((Comment.companyName==current_user.name)).all()
-    # return render_template('dashboard.html', company_review=company_review)
+    return render_template('dashboard.html', company_review=company_review)
 
     print('%%%%%%%%%%%%%%%%%%', company_review)
     ratings = []
