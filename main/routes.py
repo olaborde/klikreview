@@ -36,14 +36,14 @@ def about():
 @login_required
 def dashboard():
     company_review = Comment.query.filter((Comment.companyName==current_user.name)).all()
-    return render_template('dashboard.html', company_review=company_review)
 
     print('%%%%%%%%%%%%%%%%%%', company_review)
     ratings = []
-    average_rating = None
+    average_rating = 0
     for comments in company_review:
         ratings.append(comments.rating)
         average_rating = sum(ratings) / len(ratings)
+    print("++++++++++++++++++++====", average_rating )    
     return render_template('dashboard.html', company_review=company_review, average= average_rating)
 
 
