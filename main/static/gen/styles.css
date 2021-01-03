@@ -3985,7 +3985,7 @@ input[type=button].btn-block {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
+  /* list-style: none; */
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -10318,13 +10318,13 @@ body {
  * Navbar
  */
 
-.navbar-brand {
+/* .navbar-brand {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, .25);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
-}
+} */
 
 .navbar .form-control {
   padding: .75rem 1rem;
